@@ -2,5 +2,5 @@
 
 int main()
 {
-    std::cout << "Witamy na pokladzie!" << std::endl;
+    std::cout << "Witamy na pokladzie!!" << std::endl;
 }
