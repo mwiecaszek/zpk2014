@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+
+    int t;
+    int g;
+    int m;
+    int s;
+
+    cin >> t;
+
+    g = t/3600;
+    m = (t % 3600)/60;
+    s = t - (g*3600 + m*60);
+
+    cout << g << "g" << m << "m" << s << "s" << endl;
+
+}
