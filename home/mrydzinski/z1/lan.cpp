@@ -6,4 +6,4 @@ int main() {
   cin >> a >> b;
   y = ((a%10) * 2 + 5) * 50 + 1764 - b;
   cout << y << endl;
-}
+} 
