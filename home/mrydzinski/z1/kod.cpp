@@ -29,7 +29,7 @@ int main(){
                     else
                         if (b == 'F'){
                             y = 15;
-                        }
+                        } 
                         else
                             y = (int)b - 48;
     kod = 16 * x + y;
