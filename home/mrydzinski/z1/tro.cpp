@@ -27,7 +27,7 @@ int main() {
         }
     if(k == 1){
         cout << "TAK" << endl;
-    }
+    } 
     else
         cout << "NIE" << endl;
 }
