@@ -14,4 +14,4 @@ int main() {
         cin >> x;
     }
     cout << z;
-}
+} 
