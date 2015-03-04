@@ -6,4 +6,4 @@ int main() {
     cin  >> a >> b >> c;
     cout << a << " " << b << " " << c << endl
          << c << " " << b << " " << a << endl;
-}
+} 
