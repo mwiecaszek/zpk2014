@@ -3,16 +3,15 @@ using namespace std;
 
 int main(){
 
-int n,bufor=0,bufor2=0,b=0,e=10;
+int n,bufor=0,b=0,e=10;
 cin>>n;
-
-
-if(n%e==0){
-
+b=n;
+if(n%10!=0)e=1;
+else
+while(b%e==0){
+    b=b/10;
     e*=10;
-
 }
-n=n/e;
 
 
 
@@ -24,9 +23,9 @@ while(n>=1){
 
     n=n/10;
 
-    if(bufor!=0||bufor2!=0)
+
 cout<<bufor;
-bufor2=bufor;
+
 
 }
 
