@@ -3,16 +3,41 @@ using namespace std;
 
 int main(){
 
-char a, b;
-int x1, x2, x3;
+char a;
+char b;
 
-cin >> hex1 >> hex2;
-    x1 = (int)a;
-    x2 = (int)b;
-if (x2 < 65 | x2 > 70)
-        x3 = 16*(x1 - 48) + (x2 - 48);
-else
-        x3 = 16*(x1 - 48) + (x2 - 55);
-cout << x3 << endl;
-cout << (char)x3 << endl;
+cin>>a>>b;
+
+int wynik;
+int drugi;
+
+a=int(a)-48;
+
+switch(b){
+case 'A':
+   drugi = 10;
+   break;
+case 'B':
+    drugi = 11;
+    break;
+case 'C':
+    drugi = 12;
+    break;
+case 'D':
+    drugi = 13;
+    break;
+case 'E':
+    drugi = 14;
+    break;
+case 'F':
+    drugi = 15;
+    break;
+default:
+    drugi = int(b)-48;
+    break;
+}
+wynik = 16*a+drugi;
+cout<<wynik<<endl<<char(wynik);
+
+
 }
