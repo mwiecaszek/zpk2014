@@ -1,28 +1,43 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int p, w;
-    char a, b;
-    w =0;
-    cin >> a >> b;
-    p=a-48;
-    if((b!='A')&&(b!='B')&&(b!='C')&&(b!='D')&&(b!='E')&&(b!='F')){
-        w=b-48;}
-    else if (b=='A')
-        w=10;
-    else if (b=='B')
-        w=11;
-    else if (b=='C')
-        w=12;
-    else if (b=='D')
-        w=13;
-    else if (b=='E')
-        w=14;
-    else if (b=='F')
-        w=15;
-    w += p*16;
-    char zmienna;
-    zmienna = w;
-    cout << w <<endl << zmienna <<endl;
+int main(){
+
+char a;
+char b;
+
+cin>>a>>b;
+
+int wynik;
+int drugi;
+
+a=int(a)-48;
+
+switch(b){
+case 'A':
+   drugi = 10;
+   break;
+case 'B':
+    drugi = 11;
+    break;
+case 'C':
+    drugi = 12;
+    break;
+case 'D':
+    drugi = 13;
+    break;
+case 'E':
+    drugi = 14;
+    break;
+case 'F':
+    drugi = 15;
+    break;
+default:
+    drugi = int(b)-48;
+    break;
+}
+wynik = 16*a+drugi;
+cout<<wynik<<endl<<char(wynik);
+
+
 }
