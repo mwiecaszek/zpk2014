@@ -19,10 +19,9 @@ int main()
     Point p(1.0, 0.0);
     Point q(2.0, 2.0);
     Point r(0.0, 3.0);
-
+        
     cout << "Punkty: " << p << " " << q << " " << r << endl;
     cout << "Pole: " << area(p,q,r) << endl;
-
+    
     return 0;
 }
-sqrt( (A.x - B.x)^2 + (A.y - B.y)^2 + (A.z - B.z)^2 )
