@@ -40,7 +40,14 @@ double Point::getY()
 ostream& operator<<(ostream &o, Point p)
 {
     o << "(" << p.getX() << "," << p.getY() << ")";
-    
+
     return o;
 }
 
+istream& operator>>(istream &i, Point p)
+{
+    i >> p.x;
+    i >> p.y;
+
+    return i;
+}
