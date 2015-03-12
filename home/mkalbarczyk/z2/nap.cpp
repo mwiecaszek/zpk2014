@@ -4,19 +4,23 @@ using namespace std;
 int main(){
 
     int n;
-    string a;
-    string zuza;
-    string antek;
-    cin>>n;
+    int a;
 
+    cin>>n;
+    int t[n];
     for(int i=0; i<n; i++){
         cin>>a;
-        if(i==0) zuza = a;
-        else{
-            if(i%2==0) zuza = zuza+" "+a;
-            if(i==1) antek = a;
-            if(i%2==1 && i!=1) antek = antek+" "+a;
-    }}
+        t[i]=a;
+    }
 
-    cout<<zuza<<endl<<antek;
+    for(int j=0;j<n;j=j+2){
+        cout<<t[j]<<" ";
+    }
+
+    cout<<endl;
+
+    for(int k=1;k<n;k=k+2){
+        cout<<t[k]<<" ";
+    }
+
 }
