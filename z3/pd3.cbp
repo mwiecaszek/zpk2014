@@ -31,6 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="area.cpp" />
+		<Unit filename="point.cpp" />
+		<Unit filename="point.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
