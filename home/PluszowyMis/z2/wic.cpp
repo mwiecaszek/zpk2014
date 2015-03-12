@@ -10,6 +10,7 @@ int main(){
 	for(int i = 0; i < in; i++){
 		cin >> temp;
 		if(temp > first){
+			second = first;
 			first = temp;
 		} else if(temp > second){
 			second = temp;
