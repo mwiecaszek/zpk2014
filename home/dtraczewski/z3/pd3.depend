@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1426267334 source:d:\studia\iv rok\ii semestr\zpk\zpk2014\home\dtraczewski\z3\point.cpp
+	"point.h"
+
+1426267334 d:\studia\iv rok\ii semestr\zpk\zpk2014\home\dtraczewski\z3\point.h
+	<iostream>
+	<math.h>
+
