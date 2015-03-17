@@ -4,27 +4,36 @@ using namespace std;
 
 #include "point.h"
 
-double area_under(Point a, Point b)
+double area(Point i, Point j, Point k)
 {
-    return (b.getX() - a.getX()) * (a.getY() + b.getY()) / 2.0;
-}
+    double a, b, c, s;
 
-double area(Point a, Point b, Point c)
-{
-    return fabs(area_under(a,b) + area_under(b,c) + area_under(c,a));
+    a = sqrt(pow(j.getX() - k.getX(), 2) + pow(j.getY() - k.getY(), 2) + pow(j.getZ() - k.getZ(), 2));
+    b = sqrt(pow(i.getX() - k.getX(), 2) + pow(i.getY() - k.getY(), 2) + pow(i.getZ() - k.getZ(), 2));
+    c = sqrt(pow(i.getX() - j.getX(), 2) + pow(i.getY() - j.getY(), 2) + pow(i.getZ() - j.getZ(), 2));
+
+    s = (a + b + c) / 2;
+
+    return sqrt(s * (s - a) * (s - b) * (s - c));
 }
 
 int main()
 {
-    Point p;
-    Point q(2.0, 2.0);
-    Point r(0.0, 3.0);
+    Point A;
+    Point B;
+    Point C;
 
-    cout << "Podaj wspolrzedne punktu p: ";
-    cin >> p;
+    cout << "Podaj wspolrzedne punktu A: ";
+    cin >> A;
 
-    cout << "Punkty: " << p << " " << q << " " << r << endl;
-    cout << "Pole: " << area(p,q,r) << endl;
+    cout << "Podaj wspolrzedne punktu B: ";
+    cin >> B;
+
+    cout << "Podaj wspolrzedne punktu C: ";
+    cin >> C;
+
+    cout << endl << "Punkty: " << A << " " << B << " " << C << endl;
+    cout << "Pole: " << area(A, B, C) << endl;
 
     return 0;
 }
