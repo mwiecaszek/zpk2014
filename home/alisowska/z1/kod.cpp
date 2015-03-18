@@ -2,10 +2,14 @@
 using namespace std;
 
 int main() {
-    int a, w;
-    char b;
+    int p, w;
+    char a, b;
+    w =0;
     cin >> a >> b;
-    if (b=='A')
+    p=a-48;
+    if((b!='A')&&(b!='B')&&(b!='C')&&(b!='D')&&(b!='E')&&(b!='F')){
+        w=b-48;}
+    else if (b=='A')
         w=10;
     else if (b=='B')
         w=11;
@@ -17,7 +21,7 @@ int main() {
         w=14;
     else if (b=='F')
         w=15;
-    w += a*16;
+    w += p*16;
     char zmienna;
     zmienna = w;
     cout << w <<endl << zmienna <<endl;
