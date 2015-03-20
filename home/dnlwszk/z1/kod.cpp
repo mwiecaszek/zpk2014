@@ -1,3 +1,5 @@
+#include <iomanip>
+#include <math.h>
 
 #include <iostream>
 using namespace std;
@@ -14,4 +16,3 @@ int main() {
 	cout<<(char)a;
 	cin>>a;
 }
-
