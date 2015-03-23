@@ -1,4 +1,4 @@
- #include "point.h"
+#include "point.h"
 
 Point::Point()
 {
@@ -25,7 +25,6 @@ void Point::setY(double _y)
 {
     y = _y;
 }
-
 
 double Point::getX()
 {

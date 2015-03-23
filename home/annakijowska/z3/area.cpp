@@ -22,6 +22,7 @@ int main()
 
     cout << "Podaj wspolrzedne punktu p: ";
     cin >> p;
+
     cout << "Punkty: " << p << " " << q << " " << r << endl;
     cout << "Pole: " << area(p,q,r) << endl;
 

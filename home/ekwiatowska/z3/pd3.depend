@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1426180165 source:c:\users\ek291637\documents\github\zpk2014\home\ekwiatowska\z3\area.cpp
+	<iostream>
+	<math.h>
+	"point.h"
+
+1426180143 c:\users\ek291637\documents\github\zpk2014\home\ekwiatowska\z3\point.h
+	<iostream>
+	<math.h>
+
+1426180181 source:c:\users\ek291637\documents\github\zpk2014\home\ekwiatowska\z3\point.cpp
+	"point.h"
+
+1426510865 source:c:\users\ewa_2.lenovo-ewa\documents\github\zpk2014\home\ekwiatowska\z3\point.cpp
+	"point.h"
+
+1426510865 c:\users\ewa_2.lenovo-ewa\documents\github\zpk2014\home\ekwiatowska\z3\point.h
+	<iostream>
+	<math.h>
+
+1426512320 source:c:\users\ewa_2.lenovo-ewa\documents\github\zpk2014\home\ekwiatowska\z3\area.cpp
+	<iostream>
+	<math.h>
+	"point.h"
+
