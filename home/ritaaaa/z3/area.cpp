@@ -12,11 +12,11 @@ double dlugosc(Point a, Point b)
 double area(Point a, Point b, Point c)
 {
     double AB = dlugosc(a,b);
-    double BC = dlugosc(a,c);
+    double AC = dlugosc(a,c);
     double CB = dlugosc(c,b);
-    double p = (AB+BC+CB)/2;
+    double p = (AB+AC+CB)/2;
 
-    return sqrt(p * (p-AB) * (p-BC) * (p-CB));
+    return sqrt(p * (p-AB) * (p-AC) * (p-CB));
 }
 
 int main()
