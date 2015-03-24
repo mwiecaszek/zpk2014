@@ -2,7 +2,7 @@
 using namespace std;
 
 main () {
-    int i; //cyfra z kodu szestanstkowego
+    char; //cyfra z kodu szestanstkowego
     char j; //litera z kodu szestnastkowego
     cin >> i >> j ;
     i *= 16;
@@ -20,6 +20,7 @@ main () {
         else if (j=='F')
             k=15;
     i += k;
+    char znak = i+48;
     cout << i << endl;
-    cout << (char)i << endl;
+    cout << znak << endl;
 }
