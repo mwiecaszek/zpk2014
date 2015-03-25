@@ -1,39 +1,59 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-int main() {
-  string a, b, c;
-  cin >> a >> b >> c;
-  int n = a.size(), m = c.size();
-  bool wieksza = false, mniejsza = false;
-
-if (n > m)
-    wieksza = true;
-else if (n < m)
-    mniejsza = true;
-else if (n == m)
-{   if (a[0] > c[0])
-        wieksza = true;
-    else if (a[0] < c[0])
-        mniejsza = true;
-    else
-    {   for (int i = 0; a[i] == c[i] && i < n - 1; i++)
-         if (a[i + 1] > c[i + 1])
-            wieksza = true;
-        else if (a[i + 1] < c[i + 1])
-            mniejsza = true;
+char czy(string x, string y) {
+    if (x.size() > y.size())
+        return '>';
+    else if (x.size() < y.size())
+        return '<';
+    else {
+        for (int i = 0; i< x.size(); ++i){
+            if (x[i] > y[i]) return '>';
+            if (x[i] < y[i]) return '<';
+        }
+        return '=';
     }
 }
 
-if ((b == ">" || b == ">=") && wieksza)
-    cout << "TAK" << endl;
-else if ((b == "<" || b == "<=") && mniejsza)
-    cout << "TAK" << endl;
-else if ((b == "==" || b == "<=" || b == ">=") && !(mniejsza) && !(wieksza))
-    cout << "TAK" << endl;
-else if (b == "!=" && (mniejsza || wieksza))
-    cout << "TAK" << endl;
-else
-    cout << "NIE" << endl;
+int main() {
+    string x, znak, y;
+    cin >> x >> znak >> y;
 
+    if (znak == "=="){
+        if (czy(x,y) == '=')
+            cout << "TAK" << endl;
+        else
+            cout << "NIE" << endl;
+    }
+    if (znak == "!="){
+        if (czy(x,y) != '=')
+            cout << "TAK" << endl;
+        else
+            cout << "NIE" << endl;
+    }
+    if (znak == ">"){
+        if (czy(x,y) == '>')
+            cout << "TAK" << endl;
+        else
+            cout << "NIE" << endl;
+    }
+    if (znak == "<"){
+       if (czy(x,y) == '<')
+            cout << "TAK" << endl;
+        else
+            cout << "NIE" << endl;
+    }
+    if (znak == ">="){
+        if (czy(x,y) == '=' || czy(x,y) == '>')
+            cout << "TAK" << endl;
+        else
+            cout << "NIE" << endl;
+    }
+    if (znak == "<="){
+        if(czy(x,y) == '=' || czy(x,y) == '<')
+            cout << "TAK" << endl;
+        else
+            cout << "NIE" << endl;
+    }
 }
