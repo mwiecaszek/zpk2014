@@ -11,7 +11,7 @@ Point::Point(double _x, double _y, double _z)
 {
     setX(_x);
     setY(_y);
-    setY(_z);
+    setZ(_z);
 }
 
 Point::~Point()
@@ -48,14 +48,14 @@ double Point::getZ()
     return z;
 }
 
-ostream& operator << (ostream &o, Point p)
+ostream& operator<<(ostream &o, Point p)
 {
     o << "(" << p.getX() << "," << p.getY() << "," << p.getZ() << ")";
 
     return o;
 }
 
-istream& operator >> (istream &i, Point &p)
+istream& operator>>(istream &i, Point &p)
 {
     i >> p.x;
     i >> p.y;

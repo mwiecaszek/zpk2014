@@ -17,8 +17,8 @@ double area(Point a, Point b, Point c)
 int main()
 {
     Point p;
-    Point q(2.0, 2.0);
-    Point r(0.0, 3.0);
+    Point q(2, 2);
+    Point r(0, 3);
 
     cout << "Podaj wspolrzedne punktu p: ";
     cin >> p;
