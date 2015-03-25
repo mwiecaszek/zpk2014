@@ -1,4 +1,4 @@
- #include "point.h"
+#include "point.h"
 
 Point::Point()
 {
@@ -63,3 +63,4 @@ istream& operator>>(istream &i, Point &p)
 
     return i;
 }
+

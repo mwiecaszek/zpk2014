@@ -4,46 +4,35 @@ using namespace std;
 
 #include "point.h"
 
-double area_under(Point a, Point b)
+double bok(Point a, Point b)
 {
-    return (b.getX() - a.getX()) * (a.getY() + b.getY()) / 2.0;
+    return sqrt(pow(a.getX()-b.getX(),2) + pow(a.getY()-b.getY(),2) + pow(a.getZ()-b.getZ(),2));
 }
 
 double area(Point a, Point b, Point c)
 {
-    return fabs(area_under(a,b) + area_under(b,c) + area_under(c,a));
-}
-
-double pole( Point a, Point b, Point c )
-{
-    double AB, BC, CA, p;
-    AB = sqrt( ( b.getX() - a.getX() ) * ( b.getX() - a.getX() ) + ( b.getY() - a.getY() ) * ( b.getY() - a.getY() )
-               + ( b.getZ() - a.getZ() ) * ( b.getZ() - a.getZ() ) );
-    BC = sqrt( ( c.getX() - b.getX() ) * ( c.getX() - b.getX() ) + ( c.getY() - b.getY() ) * ( c.getY() - b.getY() )
-               + ( c.getZ() - b.getZ() ) * ( c.getZ() - b.getZ() ) );
-    CA = sqrt( ( a.getX() - c.getX() ) * ( a.getX() - c.getX() ) + ( a.getY() - c.getY() ) * ( a.getY() - c.getY() )
-               + ( a.getZ() - c.getZ() ) * ( a.getZ() - c.getZ() ) );
-    p = ( AB + BC + CA ) / 2;
-    return sqrt( p * ( p - AB ) * ( p - BC ) * ( p - CA ) );
+    double p =(bok(a,b)+bok(b,c)+bok(a,c))/2;
+    return sqrt(p*(p-bok(a,b))*(p-bok(b,c))*(p-bok(a,c)));
 }
 
 int main()
 {
-    Point a;
-    Point b;
-    Point c;
 
-    cout << "Podaj wspolrzedne punktu a: ";
-    cin >> a;
+    Point p, q, r;
 
-    cout << "Podaj wspolrzedne punktu b: ";
-    cin >> b;
+    cout << "Podaj wspolrzedne pkt. p (wg. wzoru: p.x p.y p.z): ";
+    cin >> p;
 
-    cout << "Podaj wspolrzedne punktu c: ";
-    cin >> c;
+    cout << "Podaj wspolrzedne pkt. q (wg. wzoru: q.x q.y q.z): ";
+    cin >> q;
 
-    cout << "Punkty: " << a << " " << b << " " << c << endl;
-    cout << "Pole: " << pole( a, b, c ) << endl;
+    cout << "Podaj wspolrzedne pkt. r (wg. wzoru: r.x r.y r.z): ";
+    cin >> r;
+
+
+
+    cout << "Punkty: " << p << " " << q << " " << r << endl;
+    cout << "Pole: " << area(p,q,r) << endl;
 
     return 0;
 }

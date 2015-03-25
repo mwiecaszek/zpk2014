@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1427234653 source:c:\users\kasia\desktop\programowanie\iii praca domowa\area.cpp
+	<iostream>
+	<math.h>
+	"point.h"
+
+1426363955 c:\users\kasia\desktop\programowanie\iii praca domowa\point.h
+	<iostream>
+	<math.h>
+
+1426363955 source:c:\users\kasia\desktop\programowanie\iii praca domowa\point.cpp
+	"point.h"
+

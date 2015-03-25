@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1427309513 source:c:\users\michal\desktop\projektc++\pole\area.cpp
+	<iostream>
+	<math.h>
+	"point.h"
+
+1427309458 c:\users\michal\desktop\projektc++\pole\point.h
+	<iostream>
+	<math.h>
+
+1427309484 source:c:\users\michal\desktop\projektc++\pole\point.cpp
+	"point.h"
+
