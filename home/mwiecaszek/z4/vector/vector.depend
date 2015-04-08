@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1428422551 source:c:\users\meeg\documents\github\zpk2014\home\mwiecaszek\z4\gram-schmidt.cpp
+	<iostream>
+	"point.h"
+
+1428422873 c:\users\meeg\documents\github\zpk2014\home\mwiecaszek\z4\point.h
+	<iostream>
+	<math.h>
+
+1428422623 source:c:\users\meeg\documents\github\zpk2014\home\mwiecaszek\z4\gs.cpp
+	<iostream>
+	"vect.h"
+
+1428508350 c:\users\meeg\documents\github\zpk2014\home\mwiecaszek\z4\vect.h
+	<iostream>
+	<math.h>
+	<assert.h>
+	<initializer_list>
+
+1428422802 source:c:\users\meeg\documents\github\zpk2014\home\mwiecaszek\z4\point.cpp
+	"point.h"
+	<cassert>
+
+1428508702 source:c:\users\meeg\documents\github\zpk2014\home\mwiecaszek\z4\vector\main.cpp
+	"vect.h"
+
+1428511006 c:\users\meeg\documents\github\zpk2014\home\mwiecaszek\z4\vector\vect.h
+	<iostream>
+	<math.h>
+	<assert.h>
+
+1428510424 source:c:\users\meeg\documents\github\zpk2014\home\mwiecaszek\z4\vector\vect.cpp
+	"vect.h"
+
